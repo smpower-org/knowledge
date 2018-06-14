@@ -1,0 +1,11 @@
+[Length]
+Hours=16
+[Schedule]
+Activity1=30 08:00 Getting up
+Activity2=20 09:00 Wrok: Cleaning
+Activity3=60 - Work: SuperMemo
+Activity4=30 11:45 Meal: Lunch
+Activity5=15 - Rest
+Activity6=300 13:00 Work
+Activity7=20 18:10 Walking home
+Activity8=60 - Meal: Dinner

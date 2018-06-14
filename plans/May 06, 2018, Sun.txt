@@ -1,0 +1,6 @@
+﻿[Length]
+Hours=16
+[Schedule]
+Activity1=120 09:00 SuperMemo: Repeat and Final drill
+Activity2=60 - JavaScript 代理模式
+Activity3=0 - C 语言程序设计 - 导言

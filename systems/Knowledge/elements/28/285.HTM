@@ -1,0 +1,80 @@
+<H3 id=nav_point_49 class=calibre11 style='FONT-SIZE: 1.12em; FONT-FAMILY: "Microsoft YaHei", Arial, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: bold; COLOR: rgb(49,49,49); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 1em 0px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 1.2; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial'><STRONG class=calibre6 style="FONT-WEIGHT: bold; LINE-HEIGHT: 1.2">&#29992;&#38381;&#21253;&#23454;&#29616;&#21629;&#20196;&#27169;&#24335;</STRONG></H3>
+<P class=calibre1 style='FONT-SIZE: 14px; FONT-FAMILY: "Microsoft YaHei", Arial, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(49,49,49); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; MARGIN: 1em 0px; DISPLAY: block; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial'>&#22312;&#23436;&#25104;&#38381;&#21253;&#23454;&#29616;&#30340;&#21629;&#20196;&#27169;&#24335;&#20043;&#21069;&#65292;&#25105;&#20204;&#20808;&#29992;&#38754;&#21521;&#23545;&#35937;&#30340;&#26041;&#24335;&#26469;&#32534;&#20889;&#19968;&#27573;&#21629;&#20196;&#27169;&#24335;&#30340;&#20195;&#30721;&#65292;&#20195;&#30721;&#22914;&#19979;&#65306;</P><PRE class=dai_ma_wu_xing_hao style="FONT-SIZE: 0.75em; BORDER-TOP: rgb(0,0,0) 1px solid; FONT-FAMILY: Courier, Menlo, Monaco, Consolas, monospace; BORDER-RIGHT: rgb(0,0,0) 1px solid; WHITE-SPACE: pre; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(0,0,0) 1px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(49,49,49); PADDING-BOTTOM: 0.3em; FONT-STYLE: normal; PADDING-TOP: 0.3em; PADDING-LEFT: 0.3em; BORDER-LEFT: rgb(0,0,0) 1px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.3em 0px; DISPLAY: block; LETTER-SPACING: normal; PADDING-RIGHT: 0.3em; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial"><CODE class=calibre9 style="FONT-FAMILY: Courier, Menlo, Monaco, Consolas, monospace">&lt;html&gt;
+  &lt;body&gt;
+    &lt;button id="execute"&gt;&#28857;&#20987;&#25105;&#25191;&#34892;&#21629;&#20196;&lt;/button&gt;
+    &lt;button id="undo"&gt;&#28857;&#20987;&#25105;&#25191;&#34892;&#21629;&#20196;&lt;/button&gt;
+  &lt;script&gt;
+
+    var Tv = {
+      open: function(){
+        console.log( '&#25171;&#24320;&#30005;&#35270;&#26426;' );
+      },
+      close: function(){
+        console.log( '&#20851;&#19978;&#30005;&#35270;&#26426;' );
+      }
+    };
+
+    var OpenTvCommand = function( receiver ){
+      this.receiver = receiver;
+    };
+
+    OpenTvCommand.prototype.execute = function(){
+      this.receiver.open();    // &#25191;&#34892;&#21629;&#20196;&#65292;&#25171;&#24320;&#30005;&#35270;&#26426;
+    };
+
+    OpenTvCommand.prototype.undo = function(){
+      this.receiver.close();    // &#25764;&#38144;&#21629;&#20196;&#65292;&#20851;&#38381;&#30005;&#35270;&#26426;
+    };
+
+    var setCommand = function( command ){
+      document.getElementById( 'execute' ).onclick = function(){
+        command.execute();     // &#36755;&#20986;&#65306;&#25171;&#24320;&#30005;&#35270;&#26426;
+      }
+      document.getElementById( 'undo' ).onclick = function(){
+        command.undo();     // &#36755;&#20986;&#65306;&#20851;&#38381;&#30005;&#35270;&#26426;
+      }
+    };
+
+    setCommand( new OpenTvCommand( Tv ) );
+
+  &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</CODE></PRE>
+<P class=calibre1 style='FONT-SIZE: 14px; FONT-FAMILY: "Microsoft YaHei", Arial, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(49,49,49); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; MARGIN: 1em 0px; DISPLAY: block; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial'>&#21629;&#20196;&#27169;&#24335;&#30340;&#24847;&#22270;&#26159;&#25226;&#35831;&#27714;&#23553;&#35013;&#20026;&#23545;&#35937;&#65292;&#20174;&#32780;&#20998;&#31163;&#35831;&#27714;&#30340;&#21457;&#36215;&#32773;&#21644;&#35831;&#27714;&#30340;&#25509;&#25910;&#32773;&#65288;&#25191;&#34892;&#32773;&#65289;&#20043;&#38388;&#30340;&#32806;&#21512;&#20851;&#31995;&#12290;&#22312;&#21629;&#20196;&#34987;&#25191;&#34892;&#20043;&#21069;&#65292;&#21487;&#20197;&#39044;&#20808;&#24448;&#21629;&#20196;&#23545;&#35937;&#20013;&#26893;&#20837;&#21629;&#20196;&#30340;&#25509;&#25910;&#32773;&#12290;</P>
+<P class=calibre1 style='FONT-SIZE: 14px; FONT-FAMILY: "Microsoft YaHei", Arial, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(49,49,49); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; MARGIN: 1em 0px; DISPLAY: block; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial'>&#20294;&#22312; JavaScrip t&#20013;&#65292;&#20989;&#25968;&#20316;&#20026;&#19968;&#31561;&#23545;&#35937;&#65292;&#26412;&#36523;&#23601;&#21487;&#20197;&#22235;&#22788;&#20256;&#36882;&#65292;&#29992;&#20989;&#25968;&#23545;&#35937;&#32780;&#19981;&#26159;&#26222;&#36890;&#23545;&#35937;&#26469;&#23553;&#35013;&#35831;&#27714;&#26174;&#24471;&#26356;&#21152;&#31616;&#21333;&#21644;&#33258;&#28982;&#12290;&#22914;&#26524;&#38656;&#35201;&#24448;&#20989;&#25968;&#23545;&#35937;&#20013;&#39044;&#20808;&#26893;&#20837;&#21629;&#20196;&#30340;&#25509;&#25910;&#32773;&#65292;&#37027;&#20040;&#38381;&#21253;&#21487;&#20197;&#23436;&#25104;&#36825;&#20010;&#24037;&#20316;&#12290;&#22312;&#38754;&#21521;&#23545;&#35937;&#29256;&#26412;&#30340;&#21629;&#20196;&#27169;&#24335;&#20013;&#65292;&#39044;&#20808;&#26893;&#20837;&#30340;&#21629;&#20196;&#25509;&#25910;&#32773;&#34987;&#24403;&#25104;&#23545;&#35937;&#30340;&#23646;&#24615;&#20445;&#23384;&#36215;&#26469;&#65307;&#32780;&#22312;&#38381;&#21253;&#29256;&#26412;&#30340;&#21629;&#20196;&#27169;&#24335;&#20013;&#65292;&#21629;&#20196;&#25509;&#25910;&#32773;&#20250;&#34987;&#23553;&#38381;&#22312;&#38381;&#21253;&#24418;&#25104;&#30340;&#29615;&#22659;&#20013;&#65292;&#20195;&#30721;&#22914;&#19979;&#65306;</P><PRE class=dai_ma_wu_xing_hao style="FONT-SIZE: 0.75em; BORDER-TOP: rgb(0,0,0) 1px solid; FONT-FAMILY: Courier, Menlo, Monaco, Consolas, monospace; BORDER-RIGHT: rgb(0,0,0) 1px solid; WHITE-SPACE: pre; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(0,0,0) 1px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(49,49,49); PADDING-BOTTOM: 0.3em; FONT-STYLE: normal; PADDING-TOP: 0.3em; PADDING-LEFT: 0.3em; BORDER-LEFT: rgb(0,0,0) 1px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 1.3em 0px; DISPLAY: block; LETTER-SPACING: normal; PADDING-RIGHT: 0.3em; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial"><CODE class=calibre9 style="FONT-FAMILY: Courier, Menlo, Monaco, Consolas, monospace">var Tv = {
+  open: function(){
+    console.log( '&#25171;&#24320;&#30005;&#35270;&#26426;' );
+  },
+  close: function(){
+    console.log( '&#20851;&#19978;&#30005;&#35270;&#26426;' );
+  }
+};
+
+var createCommand = function( receiver ){
+
+  var execute = function(){
+    return receiver.open();    // &#25191;&#34892;&#21629;&#20196;&#65292;&#25171;&#24320;&#30005;&#35270;&#26426;
+  }
+
+  var undo = function(){
+    return receiver.close();    // &#25191;&#34892;&#21629;&#20196;&#65292;&#20851;&#38381;&#30005;&#35270;&#26426;
+  }
+
+  return {
+    execute: execute,
+    undo: undo
+  }
+
+};
+
+var setCommand = function( command ){
+  document.getElementById( 'execute' ).onclick = function(){
+    command.execute();     // &#36755;&#20986;&#65306;&#25171;&#24320;&#30005;&#35270;&#26426;
+  }
+  document.getElementById( 'undo' ).onclick = function(){
+    command.undo();    // &#36755;&#20986;&#65306;&#20851;&#38381;&#30005;&#35270;&#26426;
+  }
+};
+
+setCommand( createCommand( Tv ) );</CODE></PRE>
+<P class=calibre1 style='FONT-SIZE: 14px; FONT-FAMILY: "Microsoft YaHei", Arial, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(49,49,49); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; MARGIN: 1em 0px; DISPLAY: block; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial'>

@@ -1,0 +1,16 @@
+[Length]
+Hours=16
+[Schedule]
+Activity1=45 07:00 Cooking
+Activity2=20 - Meal: Breakfast
+Activity3=20 - Walking to work
+Activity4=30 09:00 Work: Planning
+Activity5=135 09:30 Work
+Activity6=45 11:45 Meal: Lunch
+Activity7=15 - Rest
+Activity8=300 13:00 Work
+Activity9=20 18:10 Walking home
+Activity10=40 - Cooking, Buying food
+Activity11=60 - Meal, Preparing Breakfast
+Activity12=60 - SuperMemo
+Activity13=25 - Shower
