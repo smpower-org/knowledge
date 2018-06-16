@@ -1,3 +1,5 @@
 May 10, 2018, 09:12:11:    Font registry error! .. Accessing registry member that does not exist .. Position=1 .. Highest position=0
 May 21, 2018, 08:34:40:    Wrong setting of secondary storage may result in loss of data! .. Path: c:\sm\media\elements\knowledge
 May 21, 2018, 08:35:18:    Wrong setting of secondary storage may result in loss of data! .. Path: c:\sm\media\elements\knowledge
+Jun 14, 2018, 22:04:00:    Wrong setting of secondary storage may result in loss of data! .. Path: c:\sm\media\elements\knowledge
+Jun 14, 2018, 22:04:28:    Wrong setting of secondary storage may result in loss of data! .. Path: c:\sm\media\elements\knowledge

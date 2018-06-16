@@ -8,3 +8,4 @@ May 06, 2018, 22:21:38:    初始化 MCI 时发生问题。
 5月 07, 2018, 18:00:20:    Non-empty filespace slot #156 .. File=c:\sm\systems\english\elements\15\156.mp3 .. Allocated slots=176 .. Use File : Repair collection to check the entire filespace!
 5月 07, 2018, 18:00:20:    Non-empty filespace slot #63 .. File=c:\sm\systems\english\elements\6\63.mp3 .. Allocated slots=177 .. Use File : Repair collection to check the entire filespace!
 5月 07, 2018, 18:00:21:    Non-empty filespace slot #68 .. File=c:\sm\systems\english\elements\6\68.mp3 .. Allocated slots=178 .. Use File : Repair collection to check the entire filespace!
+Jun 14, 2018, 22:04:12:    Wrong setting of secondary storage may result in loss of data! .. Path: c:\sm\media\elements\english
